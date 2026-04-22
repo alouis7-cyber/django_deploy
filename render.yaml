@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: django-app
+    name: django-deploy
     env: python
     buildCommand: "pip install -r requirements.txt"
-    startCommand: "gunicorn django_project.wsgi:application"
+    startCommand: "gunicorn mysite.wsgi:application"
